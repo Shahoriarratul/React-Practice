@@ -1,8 +1,0 @@
-**/.vs
-**/bin
-**/obj
-**/*.user
-**/Logs/*
-**/node_modules
-
-
