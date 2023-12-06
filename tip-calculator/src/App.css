@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+}
+.box {
+  float: left;
+  font-size: medium;
+}
