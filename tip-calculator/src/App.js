@@ -74,12 +74,9 @@ function Payment({ bill, service, fservice }) {
   let percentageService =
     Number(bill) * Number(`0.${service === "5" ? "05" : service}`);
 
-  console.log(`pservince ${percentageService}`);
-
   let percentFservice =
     Number(bill) * Number(`0.${fservice === "5" ? "05" : fservice}`);
 
-  console.log(`fservince ${percentFservice}`);
   let tip = (Number(percentageService) + Number(percentFservice)) / 2;
   let billtotal = Number(bill) + tip;
 
