@@ -50,23 +50,57 @@ const tempWatchedData = [
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 const Key = "4c644847";
+const tempQuery = "interstellar";
 
 export default function App() {
+  const [query, setQuery] = useState("");
   const [movies, setMovies] = useState([]);
   const [watched, setWatched] = useState([]);
-  useEffect(function () {
-    fetch(`http://www.omdbapi.com/?apikey=${Key}&s=interstellar`)
-      .then((res) => res.json())
-      .then((data) => setMovies(data.Search));
-  });
+  const [isLoding, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [selectedId, setSelectedId] = useState(null);
+  useEffect(
+    function () {
+      async function fetchMovies() {
+        try {
+          setError("");
+          setIsLoading(true);
+          const res = await fetch(
+            `http://www.omdbapi.com/?apikey=${Key}&s=${query}`
+          );
+          if (!res.ok) throw new Error("Something went wrong in fetching");
+          const data = await res.json();
+          if (data.Response === "False") {
+            throw new Error("No movies found");
+          }
+          setMovies(data.Search);
+          setIsLoading(false);
+        } catch (err) {
+          setError(err.message);
+        } finally {
+          setIsLoading(false);
+        }
+      }
+      if (query.length < 3) {
+        setError("");
+        setMovies([]);
+        return;
+      }
+      fetchMovies();
+    },
+    [query]
+  );
   return (
     <>
       <NavBar>
+        <Search query={query} setQuery={setQuery} />
         <NumResult movies={movies} />
       </NavBar>
       <Main>
         <Box>
-          <MovieList movies={movies} />
+          {!isLoding && !error && <MovieList movies={movies} />}
+          {isLoding && <Loader />}
+          {error && <ErrorMessage message={error} />}
         </Box>
         <Box>
           <WachedSummery watched={watched} />
@@ -76,11 +110,16 @@ export default function App() {
     </>
   );
 }
+function Loader() {
+  return <p className="loader">loading</p>;
+}
+function ErrorMessage({ message }) {
+  return <p className="error">{message}</p>;
+}
 function NavBar({ children }) {
   return (
     <nav className="nav-bar">
       <Logo />
-      <Search />
       {children}
     </nav>
   );
@@ -101,8 +140,7 @@ function NumResult({ movies }) {
   );
 }
 
-function Search() {
-  const [query, setQuery] = useState("");
+function Search({ query, setQuery }) {
   return (
     <input
       className="search"
@@ -132,24 +170,28 @@ function MovieList({ movies }) {
   return (
     <ul className="list">
       {movies?.map((movie) => (
-        <Movie movie={movie} />
+        <Movie movie={movie} key={movie.imdbID} />
       ))}
     </ul>
   );
 }
 function Movie({ movie }) {
-  return (
-    <li key={movie.imdbID}>
-      <img src={movie.Poster} alt={`${movie.Title} poster`} />
-      <h3>{movie.Title}</h3>
-      <div>
-        <p>
-          <span>🗓</span>
-          <span>{movie.Year}</span>
-        </p>
-      </div>
-    </li>
-  );
+  if (movie.Poster !== "N/A") {
+    return (
+      <li key={movie.imdbID}>
+        <img src={movie.Poster} alt={`${movie.Title} poster`} />
+        <h3>{movie.Title}</h3>
+        <div>
+          <p>
+            <span>🗓</span>
+            <span>{movie.Year}</span>
+          </p>
+        </div>
+      </li>
+    );
+  } else {
+    return;
+  }
 }
 
 function WachedSummery({ watched }) {
