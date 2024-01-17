@@ -13,18 +13,6 @@
       "id": 73930385
     },
     {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": 17806751
-    },
-    {
       "cityName": "Berlin",
       "country": "Germany",
       "emoji": "🇩🇪",
@@ -35,54 +23,6 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
-    },
-    {
-      "cityName": "Chinchilla de Monte Aragon",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-01-17T10:13:10.131Z",
-      "notes": "",
-      "position": {
-        "lat": "38.95940879245423",
-        "lng": "-1.7138671875000002"
-      },
-      "id": 98443198
-    },
-    {
-      "cityName": "Chinchilla de Monte Aragon",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-01-17T10:13:10.131Z",
-      "notes": "",
-      "position": {
-        "lat": "38.95940879245423",
-        "lng": "-1.7138671875000002"
-      },
-      "id": 98443199
-    },
-    {
-      "cityName": "Chinchilla de Monte Aragon",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-01-17T10:13:10.131Z",
-      "notes": "",
-      "position": {
-        "lat": "38.95940879245423",
-        "lng": "-1.7138671875000002"
-      },
-      "id": 98443200
-    },
-    {
-      "cityName": "Chinchilla de Monte Aragon",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-01-17T10:13:10.131Z",
-      "notes": "",
-      "position": {
-        "lat": "38.95940879245423",
-        "lng": "-1.7138671875000002"
-      },
-      "id": 98443201
     },
     {
       "cityName": "Luzaga",
@@ -97,40 +37,52 @@
       "id": 98443202
     },
     {
-      "cityName": "Senes de Alcubierre",
+      "cityName": "Arino",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2024-01-17T10:16:11.475Z",
+      "date": "2024-01-17T11:18:15.060Z",
       "notes": "",
       "position": {
-        "lat": "41.89409955811395",
-        "lng": "-0.5053710937500001"
-      },
-      "id": 98443203
-    },
-    {
-      "cityName": "Camprovin",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-01-17T10:19:56.836Z",
-      "notes": "",
-      "position": {
-        "lat": "42.334184385939416",
-        "lng": "-2.7136230468750004"
+        "lat": "41.08763212467916",
+        "lng": "-0.6372070312500001"
       },
       "id": 98443204
     },
     {
-      "cityName": "Lucq-de-Bearn",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2024-01-17T10:22:36.137Z",
+      "cityName": "Santibanez de Bejar",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-17T11:19:06.289Z",
       "notes": "",
       "position": {
-        "lat": "43.34914966389313",
-        "lng": "-0.6591796875000001"
+        "lat": "40.50544628405214",
+        "lng": "-5.5810546875"
       },
       "id": 98443205
+    },
+    {
+      "cityName": "Consuegra",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-17T11:23:17.848Z",
+      "notes": "",
+      "position": {
+        "lat": "39.54641191968671",
+        "lng": "-3.7353515625000004"
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Consuegra",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-17T11:23:26.124Z",
+      "notes": "",
+      "position": {
+        "lat": "39.52946653645165",
+        "lng": "-3.6474609375000004"
+      },
+      "id": 98443207
     }
   ]
 }
