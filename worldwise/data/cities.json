@@ -35,6 +35,102 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Chinchilla de Monte Aragon",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-17T10:13:10.131Z",
+      "notes": "",
+      "position": {
+        "lat": "38.95940879245423",
+        "lng": "-1.7138671875000002"
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Chinchilla de Monte Aragon",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-17T10:13:10.131Z",
+      "notes": "",
+      "position": {
+        "lat": "38.95940879245423",
+        "lng": "-1.7138671875000002"
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Chinchilla de Monte Aragon",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-17T10:13:10.131Z",
+      "notes": "",
+      "position": {
+        "lat": "38.95940879245423",
+        "lng": "-1.7138671875000002"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Chinchilla de Monte Aragon",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-17T10:13:10.131Z",
+      "notes": "",
+      "position": {
+        "lat": "38.95940879245423",
+        "lng": "-1.7138671875000002"
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Luzaga",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-17T10:16:03.055Z",
+      "notes": "",
+      "position": {
+        "lat": "40.95501133048621",
+        "lng": "-2.4279785156250004"
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Senes de Alcubierre",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-17T10:16:11.475Z",
+      "notes": "",
+      "position": {
+        "lat": "41.89409955811395",
+        "lng": "-0.5053710937500001"
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Camprovin",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-17T10:19:56.836Z",
+      "notes": "",
+      "position": {
+        "lat": "42.334184385939416",
+        "lng": "-2.7136230468750004"
+      },
+      "id": 98443204
+    },
+    {
+      "cityName": "Lucq-de-Bearn",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-01-17T10:22:36.137Z",
+      "notes": "",
+      "position": {
+        "lat": "43.34914966389313",
+        "lng": "-0.6591796875000001"
+      },
+      "id": 98443205
     }
   ]
 }
