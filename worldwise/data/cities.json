@@ -25,18 +25,6 @@
       "id": 98443197
     },
     {
-      "cityName": "Luzaga",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-01-17T10:16:03.055Z",
-      "notes": "",
-      "position": {
-        "lat": "40.95501133048621",
-        "lng": "-2.4279785156250004"
-      },
-      "id": 98443202
-    },
-    {
       "cityName": "Arino",
       "country": "Spain",
       "emoji": "🇪🇸",
@@ -71,6 +59,18 @@
         "lng": "-3.6474609375000004"
       },
       "id": 98443207
+    },
+    {
+      "cityName": "Casas de Fernando Alonso",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-24T20:01:29.742Z",
+      "notes": "",
+      "position": {
+        "lat": "39.342794408952386",
+        "lng": "-2.3291015625000004"
+      },
+      "id": 98443208
     }
   ]
 }
