@@ -7,13 +7,7 @@ function Calculator({ workouts, allowSound }) {
   const [speed, setSpeed] = useState(90);
   const [durationBreak, setDurationBreak] = useState(5);
   const [duration, setDuration] = useState(0);
-  const playSound = useCallback(
-    function () {
-      if (!allowSound) return;
-      const sound = new Audio(clickSound);
-    },
-    [allowSound]
-  );
+
   useEffect(
     function () {
       setDuration((number * sets * speed) / 60 + (sets - 1) * durationBreak);
@@ -31,17 +25,15 @@ function Calculator({ workouts, allowSound }) {
     },
     [duration, allowSound]
   );
-  // const duration = (number * sets * speed) / 60 + (sets - 1) * durationBreak;
+
   const mins = Math.floor(duration);
   const seconds = (duration - mins) * 60;
 
   function handleInc() {
     setDuration((duration) => Math.floor(duration) + 1);
-    playSound();
   }
   function handleDec() {
     setDuration((duration) => (duration > 1 ? Math.floor(duration) - 1 : 0));
-    playSound();
   }
   return (
     <>
