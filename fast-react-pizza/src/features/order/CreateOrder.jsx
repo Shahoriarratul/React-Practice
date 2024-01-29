@@ -109,7 +109,7 @@ export async function action({ request }) {
     const errors = {}
     if (!isValidPhone(order.phone))
         errors.phone =
-            'Please give us your correct Phone number. we might need it to contract you'
+            'Please a  give us your correct Phone number. we might need it to contract you'
     if (Object.keys(errors).length > 0) return errors
 
     const newOrder = await createOrder(order)
