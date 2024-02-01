@@ -7,7 +7,7 @@ import { clearCart, getCart } from './cartSlice'
 import EmptryCart from './EmptyCart'
 
 function Cart() {
-    const username = useSelector((state) => state.user.userName)
+    const username = useSelector((state) => state.user.username)
     const cart = useSelector(getCart)
     const dispatch = useDispatch()
     if (!cart.length) return <EmptryCart />
