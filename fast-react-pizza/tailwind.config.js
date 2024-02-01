@@ -3,7 +3,7 @@ export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         fontFamily: {
-            sans: 'ROboto Mono,monospace',
+            sans: 'Roboto Mono,monospace',
         },
 
         extend: {},
